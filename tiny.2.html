@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+    <link href="/css/checkout.css" rel="stylesheet"/>
+
+    <meta name="keywords"
+      content="Mpesa payments,Stk,Stk push, url shortener, mpesa, bank stk" />
+<meta name="author" content="Tiny pesa" />
+
+<title>Tinypesa Startup Growth Fund</title>
+<meta name="description" content="This is a collection account for raising funds to grow the Tinypesa fintech product from well-wishers across the world." />
+
+
+<meta property="og:title" content="Tinypesa Startup Growth Fund">
+<meta property="og:image" itemprop="image" content="https://tinypesa.com/storage/header_graphics/KaDTD04WTEmWPiw9iQqI7JqNycbd94HsR80V2Rzq.png">
+<meta property="og:description" content="This is a collection account for raising funds to grow the Tinypesa fintech product from well-wishers across the world.">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tinypesa">
+<meta name="twitter:title" content="Tinypesa Startup Growth Fund">
+<meta name="twitter:description" content="This is a collection account for raising funds to grow the Tinypesa fintech product from well-wishers across the world.">
+<meta name="twitter:image" content="https://tinypesa.com/storage/header_graphics/KaDTD04WTEmWPiw9iQqI7JqNycbd94HsR80V2Rzq.png">
+
+<link rel="shortcut icon" href="https://tinypesa.com/assets/img/logo.ico" type="image/x-icon')}}" />
+
+
+
+
+    <title>Tinypesa Business</title>
+    <style>
+        .header-bg {
+            background-image: url("https://tinypesa.com/img/checkout/26_CHRISTMAS.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .header-profile {
+            background-image: url("https://tinypesa.com/img/checkout/kijana.jpg");
+            box-shadow: 0px 3px 10px #00000029;
+            opacity: 1;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+        }
+        .sans{
+            font-family: 'Open Sans', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="checkout-vue" class="">
+<!------------Header Section & Profile Section--------------->
+<section class="">
+
+    <div class="header-bg relative h-44">
+        <div class="container px-5 md:px-0 py-3 mx-auto">
+            <div class="flex justify-end">
+                <div class="relative">
+                    <button @click="toggleMoreOptions()" class="font-bold bg-green-100 rounded px-5 py-2 py-2 px-5 text-sm">
+                        Share/Contact
+                    </button>
+                    <div v-bind:class="{ 'hidden': !show_more }" class="absolute top-10
+                          h-64 right-1 md:right-16
+                          bg-white
+                          z-10
+                          font-bold
+                          rounded
+                          overflow-visible
+                          shadow-lg"
+                    >
+                        <div class="absolute right-4 top-2" v-if="copied">
+                            <div class="border-green-200 rounded-lg text-white border bg-gray-700 px-2 text-sm py-1">
+                                <p>Copied!</p>
+                            </div>
+                        </div>
+
+                        <div class="m-4">
+                            <div class="text-xs"><p>tinypesa.com/tinypesa</p></div>
+
+                            <div
+                                class="mt-2 border-2 border-green-300 tiny-border rounded w-full py-2 px-4 hover:bg-green-500 text-current ">
+                                <a v-clipboard:copy="message"
+                                   v-clipboard:success="onCopy"
+                                   v-clipboard:error="onError"
+                                   class="text-center">Copy Link to Share</a>
+                            </div>
+                            <div class="mt-2 text-current text-xs">
+                                <h3>Share Page on Social</h3>
+                            </div>
+                            <div class="flex justify-start sm:justify-between mt-2">
+                                <div class="w-12 rounded">
+                                    <a target="_blank" href="https://api.whatsapp.com/send?text=https://tinypesa.com/tinypesa"><img alt="" src="https://tinypesa.com/img/checkout/Group 97.svg"/></a>
+                                </div>
+                                <div class="w-12 rounded">
+                                    <a target="_blank" href="#"><img alt="" src="https://tinypesa.com/img/checkout/Group 96.svg"/></a>
+                                </div>
+                                <div class="w-12 rounded">
+                                    <a target="_blank" href="https://twitter.com/intent/tweet?text=https://tinypesa.com/tinypesa"><img alt="" src="https://tinypesa.com/img/checkout/Group 95.svg"/></a>
+                                </div>
+                                <div class="w-12 rounded">
+                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://tinypesa.com/tinypesa"><img alt="" src="https://tinypesa.com/img/checkout/Group 94.svg"/></a>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-sm">
+                                <h3 class="font-bold">Contact Support</h3>
+
+                                <p class="mt-2">
+                                    <a class="mt-2 text-green-400">customer-support@tinypesa.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://tinypesa.com/express/6abfa1c0-f603-11eb-bda1-c13cca4bf3b0/qr"><img src="https://tinypesa.com/img/checkout/Group%2085.svg" class="ml-4 w-8" alt=""></a>
+            </div>
+        </div>
+        <div class="w-full absolute">
+            <div class="flex justify-center mt-5">
+                <img src="https://tinypesa.com/storage/header_graphics/KaDTD04WTEmWPiw9iQqI7JqNycbd94HsR80V2Rzq.png"
+                     v-img-fallback="imgFallback"
+                     style="object-fit: cover" class="w-40 h-40 bg-green-300 rounded-full shadow-lg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="mt-16 md:mt-24">
+    <div class="container px-5 md:px-0 mx-auto">
+        <div class="w-full md:w-1/3 mx-auto">
+            <div class="flex justify-center">
+                <h1 class="text-xl md:text-2xl text-center sans font-bold">Tinypesa Startup Growth Fund</h1>
+                            </div>
+
+            <div class="mt-2 sm:mt-4 text-center w-full tiny-green-dark-color">
+                <div class="font-bold flex items-center justify-center">137 Subscribers</div>
+            </div>
+
+            <p class="text-center mt-3 w-full text-gray-800 leading-relaxed">
+
+                <read-more more-str="read more" text="This is a collection account for raising funds to grow the Tinypesa fintech product from well-wishers across the world." link="#" less-str="read less" :max-chars="50"></read-more>
+
+            </p>
+            <div class="mt-2 sm:mt-4 border-b-2 rounded-full " style="border-color: #B6B3C2"></div>
+
+                        <div class="flex flex-col">
+                <label class="text-sm font-bold mb-2 text-current mt-4">
+                    Enter your Mpesa phone number
+                </label>
+                <input
+                    class="w-full border-2 border-gray-300 rounded px-2 py-3 focus:border-4 focus:outline-none focus:border-green-600"
+                    placeholder="Enter Number eg. 0701...."
+                    type="text"
+                    name="phone"
+                    v-bind:class="{ 'border-red-400': checkout.errors.phone }"
+                    v-model="checkout.form.phone"
+                />
+                <p class="text-sm text-red-400" v-if="checkout.errors.phone">
+                    {{ checkout.errors.phone_message }}
+                </p>
+                <label class="text-sm font-bold mb-2 text-current mt-4">
+                    Enter Amount
+                </label>
+                <input
+                    class="w-full border-2 border-gray-300 rounded px-2 py-3 focus:border-4 focus:outline-none focus:border-green-600"
+                    placeholder="Amount Ksh. eg 10"
+                    type="number"
+                    name="amount"
+                    v-model="checkout.form.amount"
+                    v-bind:class="{ 'border-red-400': checkout.errors.amount }"
+
+                />
+                <p class="text-sm text-red-400" v-if="checkout.errors.amount">
+                    {{ checkout.errors.amount_message }}
+                </p>
+
+                
+                <button
+                    class=" w-full py-4 tiny-bg text-white sans font-bold text-center mt-4 rounded mb-6" @click="initPayment"
+                >
+                    Send money
+                </button>
+                <div class="text-center text-xs mb-2">
+                    <a class="text-gray-500 font-bold" href="https://tinypesa.com/express/6abfa1c0-f603-11eb-bda1-c13cca4bf3b0/report">Report Link</a>
+                </div>
+                <a href="https://tinypesa.com" class="self-center">
+                    <img
+                        alt="logo"
+                        class="w-12 mb-12"
+                        src="https://tinypesa.com/assets/img/logo.svg"
+                    />
+                </a>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+<!--------------Footer Section--------------------->
+<section class="fixed bg-light-green bottom-0 w-full">
+    <div class="container mx-auto">
+        <div class="w-full flex justify-center py-4">
+            <div class="text-center text-sm px-3">
+                <a href="https://tinypesa.com">Home</a>
+            </div>
+            <div class="text-center text-sm px-3">
+                <a href="https://tinypesa.com/app/policy">Privacy Policy</a>
+            </div>
+            <div class="text-center text-sm px-3">
+                <a href="https://tinypesa.com/app/terms">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="absolute top-0 w-full h-full bg-white " style="background:rgba(0,0,0,0.7) "  v-bind:class="{ 'hidden': checkout_step!=1 }" @click="resetSteps">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class="w-3/4 md:w-96 py-4 px-2 shadow-lg drop-shadow-xl rounded-lg mx-auto bg-white flex flex-col justify-center items-center">
+
+            <h1 class="text-green-500 text-center font-bold text-lg">Confirm payment</h1>
+            <h2 class="mt-5 font-bold text-center text-xl">Ksh {{ checkout.form.amount }} to Tinypesa Startup Growth Fund</h2>
+                        <button class="w-3/4 mt-3 py-2 rounded px-4 tiny-bg text-white" @click="confirmPayment">
+                Confirm Payment
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<div class="absolute top-0 w-full h-full bg-white" style="background:rgba(0,0,0,0.7) "  v-bind:class="{ 'hidden': checkout_step!=2 }" @click="resetSteps">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class="w-3/4 md:w-1/3 py-8 px-4 shadow-lg drop-shadow-xl rounded-lg mx-auto bg-white flex flex-col justify-center items-center">
+            <img src="https://tinypesa.com/img/smiley.png" v-if="!loading" alt="" style="width: 60px; height: 60px;">
+
+            <lottie-player v-if="loading" src="https://assets5.lottiefiles.com/packages/lf20_knclbifq.json"
+                           background="transparent"
+                           speed="1"
+                           style="width: 60px; height: 60px;"
+                           loop autoplay>
+            </lottie-player>
+
+            <h1 class="text-green-500 text-center font-bold text-lg md:text-2xl">Check your phone for m-pesa prompt</h1>
+
+            
+
+
+            <p class="mt-2">Powered by Tinypesa</p>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="absolute top-0 w-full h-full bg-white " style="background:rgba(0,0,0,0.7) "  v-bind:class="{ 'hidden': checkout_step!=3 }" @click="resetSteps">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class="w-3/4 md:w-1/3 py-8 px-4 shadow-lg drop-shadow-xl rounded-lg mx-auto bg-white flex flex-col justify-center items-center">
+            <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_4qldwfx4.json"
+                           background="transparent"
+                           speed="1"
+                           style="width: 100px; height: 100px;"
+                           loop autoplay>
+            </lottie-player>
+            <h1 class="text-green-500 text-center font-bold text-lg md:text-2xl">Thank you for transacting with Tinypesa</h1>
+            <a href="https://tinypesa.com" class="w-3/4 mt-3 py-2 rounded px-4 tiny-bg text-center text-white">
+                Back home
+            </a>
+
+
+        </div>
+    </div>
+</div>
+
+<div class="absolute top-0 w-full h-full bg-white " style="background:rgba(0,0,0,0.7) "  v-bind:class="{ 'hidden': checkout_step!=4 }" @click="resetSteps">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class="w-3/4 md:w-1/3 py-8 px-4 shadow-lg drop-shadow-xl rounded-lg mx-auto bg-white flex flex-col justify-center items-center">
+            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_fnkudewu.json"
+                           background="transparent"
+                           speed="1"
+                           style="width: 100px; height: 100px;"
+                           loop autoplay>
+            </lottie-player>
+            <h1 class="text-green-500 text-center font-bold text-lg md:text-2xl">Transaction not completed would you like to try again?</h1>
+            <button class="w-3/4 mt-3 py-2 rounded px-4 tiny-bg text-center text-white" @click="confirmPayment">
+                Try again
+            </button>
+
+            <button class="w-3/4 mt-3 py-2 rounded px-4 text-center text-gray-500" @click="resetSteps">
+                Cancel
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<div @click="toggleMoreOptions()" class="absolute top-0 w-full h-full bg-white z-1" v-bind:class="{ 'hidden': !show_more }" style="background: rgba(0,0,0,0.2)">
+
+</div>
+
+<div class="absolute top-0 w-full h-full bg-white z-20" id="loader">
+    <div class="w-full h-full flex justify-center items-center">
+        <div class=" flex justify-center items-center animate-pulse">
+            <img src="https://tinypesa.com/assets/img/logo.svg" class="h-16 w-16" alt="">
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+    window.link_to_copy='https://tinypesa.com/tinypesa'
+    window.short_link='6abfa1c0-f603-11eb-bda1-c13cca4bf3b0'
+    window.checkout_url='https://tinypesa.com/express/6abfa1c0-f603-11eb-bda1-c13cca4bf3b0/stk'
+</script>
+<script src="/js/checkout.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</body>
+</html>

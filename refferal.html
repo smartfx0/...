@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+ 
+  
+  <title>Alpha FX | Invitation Link</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/css/style3.css" rel="stylesheet">
+ 
+
+ 
+
+
+
+</head>
+
+<body style="   background-image: url(Screenshot_14-4-2024_82244_127.0.0.1.jpeg  );">
+   
+   <div                  
+    style="padding: 20px;   ;background-color: black;"> 
+                                           
+    
+    <a href="index.html" class="logo">
+            
+      <img class="Green Dollar-logo" src="IMG_20240406_202141.jpg" alt=" SmartFX" width="100" height="50"   style=" 
+    
+ 
+"></a>
+    
+    
+    </div>
+    <div class="text right">
+        <a href="dash.html" style="position: absolute;right: 10px;top: 15px;color: black; background-color: dodgerblue ;   " class="btn  ">Dashboard</a>
+    </div>
+
+  <main >
+    
+  <head>
+ 
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="/static/css/login2.css"/>
+       <meta name="theme-color" content=" rgba(2, 1, 15, 0.822)">
+   
+  </head>
+
+
+
+
+
+
+ 
+ 
+  
+
+
+
+
+
+ 
+  <br>
+  
+
+
+
+
+
+
+
+
+
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="refferal.css">
+  <title>Alpha FX | Invitation System</title>
+</head>
+<body    style="  background-image: url( Screenshot_14-4-2024_82244_127.0.0.1.jpeg);" >
+
+  <h2 style="color: orange;" &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;>Invitation System</h2>
+
+ 
+  <br>
+  <div id="referral-container"      &nbsp; &nbsp; &nbsp;     >
+    <button onclick="generateReferralLink()"      style="color: black;  background-color: yellowgreen;">Generate Invitation Link</button>
+  <br> <p style="color: dodgerblue;">Your Invitation Link: <span id="referral-link"></span></p>
+  </div>
+ 
+
+
+
+
+ 
+
+  
+  <br>
+ 
+  <div id="referral-info">
+    <h3 style="color: yellowgreen;">Invitation History</h3>
+
+    <br>
+    <p style="color: yellowgreen;">Total Invites: <span id="total-invites" style="color: dodgerblue;">0</span></p>
+    <p style="color: yellowgreen;">Invited Users: <span id="invited-users" style="color: dodgerblue;">0</span></p>
+  </div>
+
+  <script>
+    // Array to store referral data (user IDs and their referrals)
+    const referrals = [];
+
+    function generateReferralLink() {
+      const userId = generateUserId();
+      const referralLink = `http://127.0.0.1:5500/sign%20up.htmlref=${userId}`;
+     
+
+     
+
+
+      // Display the referral link
+      document.getElementById('referral-link').innerText = referralLink;
+
+      // Add the user to the referrals array
+      referrals.push({ userId, invites: 0 });
+
+      // Update referral information
+      updateReferralInfo();
+    }
+
+    function generateUserId() {
+      // Generate a random user ID for simplicity (replace with your logic)
+      return Math.random().toString(36).substr(2, 9);
+    }
+
+    function updateReferralInfo() {
+      const totalInvites = referrals.reduce((total, user) => total + user.invites, 0);
+      const invitedUsers = referrals.length;
+
+      // Update total invites and invited users on the page
+      document.getElementById('total-invites').innerText = totalInvites;
+      document.getElementById('invited-users').innerText = invitedUsers;
+    }
+  </script> 
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<br>
+            
+    
+<div style="position: fixed; left: 0; bottom: 0; z-index: 999999; width: 100%;">
+  <div style="width: 100%; background-color: #000; overflow:hidden; box-sizing: border-box; text-align: right; line-height:14px; font-size: 12px; box-sizing:content-box; font-feature-settings: normal; text-size-adjust: 100%; padding:1px;padding: 0px; margin: 0px;">
+    <div style="height:40px;">
+      <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&theme=dark&pref_coin_id=1505&invert_hover=" width="100%" height="36" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;">
+       </iframe>
+    </div>
+    </div>
+  </div>       
+
+          </div>
+          
+        </body>
+
+
+
+
+</html>
